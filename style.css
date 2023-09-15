@@ -1,0 +1,97 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahomasans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(icon/i4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main{
+    color: rgb(0, 0, 0);
+    width: 500px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid rgb(247, 242, 242);
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+}
+h1{
+    text-align: center;
+}
+.input_box{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    position: relative;
+}
+.input_box input{
+    width: 300px;
+    height: 40px;
+    margin: 14px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+    font-size: 14px;
+    caret-color: red;
+    padding: 0px 35px 0px 5px ;
+}
+input::placeholder{
+    color: white;
+}
+span i{
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
+.login_details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+.submit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.submit input{
+    width: 315px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    margin: 14px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.foot{
+    margin-top: 7px;
+    text-align: center;
+}
+a{
+    color: black;
+    font-weight: bold;
+}
+.login{
+    display: none;
+}
+.active .Registration{
+    display: none;
+}
+.active .login{
+    display: initial;
+}
